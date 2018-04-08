@@ -16,9 +16,6 @@ RUN yum install -y awscli \
                    libyaml-devel libffi-devel openssl-devel \
                    gdbm-devel ncurses-devel libxml-devel bzip2
 
-RUN yum clean all
-RUN rm -rf /var/cache/yum
-
 RUN pip install --upgrade pip
 RUN pip install boto3 \
                 json-spec
